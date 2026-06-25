@@ -41,7 +41,7 @@ app.post("/upload",upload.single("file"),(req,res)=>{
 app.get("/files",(req,res)=>{
   photoCollec.find().toArray()
   .then((result)=>res.send(result))
-    .catch((err)=>res.send(err))
+  .catch((err)=>res.send(err))
 })
 
 app.delete("/delete/:id",(req,res)=>{
