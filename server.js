@@ -67,5 +67,6 @@ app.delete("/delete/:id",(req,res)=>{
     console.log("Disconnected:", socket.id);
   });
 });
+let port = process.env.PORT || 3000
 
-httpServer.listen(3000, () => console.log("Server is alive at 3000"));
+httpServer.listen(port, () => console.log("Server is alive at 3000"));
